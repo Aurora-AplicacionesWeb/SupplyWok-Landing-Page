@@ -10,19 +10,42 @@
     <link rel="stylesheet" href="assets/styles/hero.css">
     <link rel="stylesheet" href="assets/styles/features.css">
     <link rel="stylesheet" href="assets/styles/pricing.css">
-<<<<<<< HEAD
     <link rel="stylesheet" href="assets/styles/faq.css">
-=======
->>>>>>> 5bcaa5e62254efe94a270a6fc8d821dff39daa62
+    <link rel="stylesheet" href="assets/styles/navbar.css">
 </head>
 
 <body>
 
-    <!-- Header / Navbar placeholder (to be implemented fully in T12) -->
     <header class="header">
         <div class="header__container">
-            <div class="header__logo">SupplyWok</div>
-            <!-- Nav links placeholder -->
+            <a href="#" class="header__logo">
+                <img src="assets/images/supplywok-logo.png" alt="SupplyWok Logo" class="header__logo-img">
+                <span class="header__logo-text">Supply<span class="header__logo-highlight">Wok</span></span>
+            </a>
+
+            <button class="header__toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="header__nav">
+                <div class="header__nav-left">
+                    <ul class="header__menu">
+                        <li><a href="#features" class="header__link header__link--active">FEATURES</a></li>
+                        <li><a href="#login" class="header__link header__link--grey">LOGIN</a></li>
+                    </ul>
+                </div>
+
+                <div class="header__nav-right">
+                    <div class="header__cta">
+                        <a href="/register" class="header__cta-btn">SEE SUPPLYWOK IN ACTION</a>
+                    </div>
+                    <ul class="header__lang">
+                        <li><button class="header__lang-btn header__lang-btn--active">EN</button></li>
+                        <li><button class="header__lang-btn">ES</button></li>
+                        <li><button class="header__lang-btn">中文</button></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
 
@@ -86,70 +109,42 @@
                 <p class="section-subtitle">Everything your kitchen needs, nothing it doesn't.</p>
 
                 <div class="features__grid">
-<<<<<<< HEAD
                     <article class="features__card features__card--span2">
                         <img src="assets/images/smart-icon.svg" alt="Smart Inventory Icon" class="features__card-icon">
                         <h3 class="features__card-title">Smart Inventory Control</h3>
-                        <p class="features__card-desc">Track your stock in real time and never run out of critical ingredients. Get automatic alerts when levels drop and stay ahead of your kitchen demands.</p>
+                        <p class="features__card-desc">Track your stock in real time and never run out of critical
+                            ingredients. Get automatic alerts when levels drop and stay ahead of your kitchen demands.
+                        </p>
                         <div class="features__card-visual">
                             <div class="features__graphic-placeholder features__graphic-placeholder--dark">
                                 Image Placeholder
                             </div>
-=======
-                    <article class="features__card features__card--large">
-                        <img src="assets/images/smart-icon.svg" alt="Smart Inventory Icon" class="features__card-icon">
-                        <h3 class="features__card-title">Smart Inventory Control</h3>
-                        <p class="features__card-desc">Track what you have and learn in real-time what needs to be
-                            restocked. Set automatic alerts for low stock and never miss vital kitchen demands.</p>
-                        <div class="features__card-visual">
-                            <!-- Placeholder for graphic -->
-                            <div class="features__graphic-placeholder">Image</div>
->>>>>>> 5bcaa5e62254efe94a270a6fc8d821dff39daa62
                         </div>
                     </article>
 
                     <article class="features__card">
-<<<<<<< HEAD
-                        <img src="assets/images/conected-supply-icon.svg" alt="Connected Supply Chain Icon" class="features__card-icon">
-                        <h3 class="features__card-title">Connected Supply Chain</h3>
-                        <p class="features__card-desc">Place orders, track deliveries, and coordinate with suppliers seamlessly. Keep your supply flow constant without manual follow-ups.</p>
-                    </article>
-
-                    <article class="features__card">
-                        <img src="assets/images/monitoring-icon.svg" alt="Real-Time Monitoring Icon" class="features__card-icon">
-                        <h3 class="features__card-title">Real-Time Monitoring</h3>
-                        <p class="features__card-desc">Monitor kitchen and storage conditions with integrated sensors. Detect temperature issues and risks instantly to prevent losses.</p>
-                    </article>
-
-                    <article class="features__card features__card--dark features__card--span2">
-                        <div class="features__card-content">
-                            <h3 class="features__card-title">Demand Forecasting</h3>
-                            <p class="features__card-desc">Understand your consumption patterns and predict future needs. Plan purchases smarter and reduce waste with data-backed insights.</p>
-                            <a href="#pricing" class="features__card-link">EXPLORE PLANS &rarr;</a>
-                        </div>
-=======
                         <img src="assets/images/conected-supply-icon.svg" alt="Connected Supply Chain Icon"
                             class="features__card-icon">
                         <h3 class="features__card-title">Connected Supply Chain</h3>
-                        <p class="features__card-desc">Connect and coordinate with suppliers directly. Place orders
-                            without phone calls, track deliveries real-time.</p>
+                        <p class="features__card-desc">Place orders, track deliveries, and coordinate with suppliers
+                            seamlessly. Keep your supply flow constant without manual follow-ups.</p>
                     </article>
 
                     <article class="features__card">
                         <img src="assets/images/monitoring-icon.svg" alt="Real-Time Monitoring Icon"
                             class="features__card-icon">
                         <h3 class="features__card-title">Real-Time Monitoring</h3>
-                        <p class="features__card-desc">Monitor kitchen and storage conditions with IoT sensors. Receive
-                            instant alerts about temperature issues and stay compliant.</p>
+                        <p class="features__card-desc">Monitor kitchen and storage conditions with integrated sensors.
+                            Detect temperature issues and risks instantly to prevent losses.</p>
                     </article>
 
-                    <article class="features__card">
-                        <img src="assets/images/icon-stadistic.svg" alt="Demand Forecasting Icon"
-                            class="features__card-icon">
-                        <h3 class="features__card-title">Demand Forecasting</h3>
-                        <p class="features__card-desc">Know what you'll need before you need it. Our predictive engine
-                            analyses order and consumption history to suggest optimal restocking levels.</p>
->>>>>>> 5bcaa5e62254efe94a270a6fc8d821dff39daa62
+                    <article class="features__card features__card--dark features__card--span2">
+                        <div class="features__card-content">
+                            <h3 class="features__card-title">Demand Forecasting</h3>
+                            <p class="features__card-desc">Understand your consumption patterns and predict future
+                                needs. Plan purchases smarter and reduce waste with data-backed insights.</p>
+                            <a href="#pricing" class="features__card-link">EXPLORE PLANS &rarr;</a>
+                        </div>
                     </article>
                 </div>
             </div>
@@ -159,11 +154,7 @@
         <section id="pricing" class="pricing">
             <div class="pricing__container">
                 <h2 class="section-title">Our plans for you</h2>
-<<<<<<< HEAD
 
-=======
-                
->>>>>>> 5bcaa5e62254efe94a270a6fc8d821dff39daa62
                 <div class="pricing__cards">
                     <!-- Premium Plan -->
                     <article class="pricing__card">
@@ -173,14 +164,9 @@
                             <span class="pricing__amount">119</span>
                             <span class="pricing__period">/mo</span>
                         </div>
-<<<<<<< HEAD
                         <p class="pricing__desc">Para negocios pequeños y medianos que necesitan control y eficiencia
                             desde el día uno.</p>
 
-=======
-                        <p class="pricing__desc">Para negocios pequeños y medianos que necesitan control y eficiencia desde el día uno.</p>
-                        
->>>>>>> 5bcaa5e62254efe94a270a6fc8d821dff39daa62
                         <ul class="pricing__features">
                             <li>✓ Smart Inventory dashboard</li>
                             <li>✓ Restocking automático</li>
@@ -198,14 +184,9 @@
                         <div class="pricing__price">
                             <span class="pricing__amount pricing__amount--custom">Personalizado</span>
                         </div>
-<<<<<<< HEAD
                         <p class="pricing__desc">Para operaciones que requieren escala, múltiples locales y soporte
                             dedicado.</p>
 
-=======
-                        <p class="pricing__desc">Para operaciones que requieren escala, múltiples locales y soporte dedicado.</p>
-                        
->>>>>>> 5bcaa5e62254efe94a270a6fc8d821dff39daa62
                         <ul class="pricing__features">
                             <li>✓ Todo lo de Premium</li>
                             <li>✓ Proveedores ilimitados</li>
@@ -214,18 +195,13 @@
                             <li>✓ Multi-local</li>
                             <li>✓ Soporte prioritario 24/7</li>
                         </ul>
-<<<<<<< HEAD
                         <a href="/register?plan=enterprise" class="btn btn--gold btn--full">Comenzar con Wok
                             Enterprise</a>
-=======
-                        <a href="/register?plan=enterprise" class="btn btn--gold btn--full">Comenzar con Wok Enterprise</a>
->>>>>>> 5bcaa5e62254efe94a270a6fc8d821dff39daa62
                     </article>
                 </div>
             </div>
         </section>
 
-<<<<<<< HEAD
         <!-- FAQ Section (T10) -->
         <section class="faq" id="faq">
             <div class="faq__container">
@@ -302,12 +278,11 @@
             </div>
         </section>
 
-=======
->>>>>>> 5bcaa5e62254efe94a270a6fc8d821dff39daa62
     </main>
 
     <!-- Scripts -->
     <script src="assets/scripts/faq.js"></script>
+    <script src="assets/scripts/navbar.js"></script>
 </body>
 
 </html>
