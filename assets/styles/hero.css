@@ -78,7 +78,7 @@
 }
 
 .hero__ctas .btn--outline:hover {
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0,0,0,0.05);
 }
 
 .hero__visual {
@@ -117,7 +117,7 @@
   align-items: flex-start;
   max-width: 300px;
   text-align: left;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
 .badge__icon {
@@ -187,7 +187,7 @@
   .hero {
     padding: 60px 20px 40px;
   }
-
+  
   .hero__container {
     gap: 40px;
   }
@@ -195,15 +195,15 @@
   .hero__title {
     margin-bottom: 20px;
   }
-
+  
   .hero__image {
     min-height: 350px;
   }
-
+  
   .hero__logos-carousel {
     gap: 24px;
   }
-
+  
   .hero__logo {
     max-width: 100px;
   }
@@ -250,7 +250,7 @@
   .badge__title {
     font-size: 1rem;
   }
-
+  
   .badge__description {
     font-size: 0.8rem;
   }
