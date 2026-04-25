@@ -1,0 +1,186 @@
+/* =============================================
+   FEATURES SECTION STYLES (T06 / Bento Update)
+   ============================================= */
+
+.features {
+  padding: 80px 24px;
+  background-color: var(--color-white); /* Background is #fff as in design */
+}
+
+.features__container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 800;
+  text-align: center;
+  letter-spacing: -0.5px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  color: var(--color-black);
+}
+
+.section-subtitle {
+  text-align: center;
+  color: var(--color-text-light);
+  font-size: 1.05rem;
+  margin-bottom: 48px;
+}
+
+.features__grid {
+  display: grid;
+  /* 3 columns:
+     Top row: span 2, span 1
+     Bottom row: span 1, span 2
+  */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.features__card {
+  background: var(--color-bg); /* #FDF6EC */
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  transition: var(--transition);
+  border: 1px solid rgba(0,0,0,0.03);
+  display: flex;
+  flex-direction: column;
+}
+
+.features__card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(0,0,0,0.06);
+}
+
+/* Let the 1st card span 2 columns */
+.features__card:nth-child(1) {
+  grid-column: span 2;
+}
+
+/* The 4th card spans 2 columns */
+.features__card:nth-child(4) {
+  grid-column: span 2;
+}
+
+/* Dark Card (Demand Forecasting) */
+.features__card--dark {
+  background-color: #231c1a;
+  color: #fff;
+  border-color: #333;
+}
+
+.features__card-icon {
+  width: 48px;
+  height: 48px;
+  display: block;
+  margin-bottom: 24px;
+  object-fit: contain;
+}
+
+.features__card-title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--color-black);
+}
+
+.features__card--dark .features__card-title {
+  color: #fff;
+}
+
+.features__card-desc {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text-light);
+  flex-grow: 1; 
+}
+
+.features__card--dark .features__card-desc {
+  color: #ccc;
+  margin-bottom: 32px;
+}
+
+.features__card-link {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--color-primary);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: var(--transition);
+}
+
+.features__card-link:hover {
+  color: var(--color-primary-dark);
+  gap: 12px; /* animate arrow */
+}
+
+/* Placeholder for the image in card 1 */
+.features__card-visual {
+  margin-top: 32px;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  overflow: hidden;
+  margin-bottom: -40px; /* bleeds to the bottom padding */
+}
+
+.features__graphic-placeholder--dark {
+  width: 100%;
+  height: 240px;
+  background-color: #1a1a1a;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* === RESPONSIVE === */
+
+@media (max-width: 1024px) {
+  .features__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .features__card:nth-child(1),
+  .features__card:nth-child(4) {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .features {
+    padding: 60px 16px;
+  }
+  
+  .features__grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .features__card {
+    padding: 32px 24px;
+  }
+  
+  .features__card:nth-child(1),
+  .features__card:nth-child(4) {
+    grid-column: span 1;
+  }
+  
+  .features__card-visual {
+    margin-bottom: -32px;
+  }
+}
