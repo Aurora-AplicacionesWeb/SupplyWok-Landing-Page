@@ -48,19 +48,14 @@ This project uses plain HTML, CSS, and vanilla JavaScript. No complex build tool
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/Aurora-startup/SupplyWok-landing-page.git
+    git clone https://github.com/Aurora-AplicacionesWeb/SupplyWok-Landing-Page.git
     ```
 2.  **Navigate to the directory:**
     ```bash
-    cd SupplyWok-landing-page
+    cd SupplyWok-Landing-Page
     ```
 3.  **Run locally:**
-    You can simply open `index.html` in any modern browser. For a better development experience (to handle potential CORS issues with module imports or local JSON files), use a local server like VS Code's "Live Server" extension, Python's `http.server`, or Node's `http-server`:
-    
-    ```bash
-    npx http-server .
-    ```
-    Then visit `http://localhost:8080`.
+    You can simply open `index.html` in any modern browser. 
 
 ## 🤝 Contributing
 
@@ -69,6 +64,9 @@ This project follows a standard **GitFlow** workflow.
 1. Create a feature branch from `develop`.
 2. Commit your changes with descriptive messages.
 3. Open a Pull Request targeting the `develop` branch for review.
+4. Merge with the `release` branch only when the `develop` branch is stable.
+5. Update the `main` branch with the latest `release` branch.
+6. Deploy the `main` branch to production.
 
 ## 📄 License
 
