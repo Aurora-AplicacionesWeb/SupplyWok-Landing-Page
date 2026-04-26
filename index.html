@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SupplyWok - Gestión inteligente de abastecimiento para restaurantes</title>
+    <meta name="description"
+        content="SupplyWok es la plataforma todo-en-uno que ayuda a restaurantes y proveedores a digitalizar operaciones eficientemente con monitoreo en tiempo real y forecasting.">
+    <meta name="keywords" content="restaurantes, proveedores, abastecimiento, SaaS, B2B, inventario, IoT, operaciones">
+    <meta name="author" content="Aurora">
+    <meta property="og:title" content="SupplyWok - Run and Scale Your Kitchen Operations">
+    <meta property="og:description"
+        content="Gestión de inventario inteligente, monitoreo IoT y control de la cadena de suministro para cocinas modernas.">
+    <meta property="og:type" content="website">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="assets/styles/base.css">
+    <link rel="stylesheet" href="assets/styles/hero.css">
+    <link rel="stylesheet" href="assets/styles/features.css">
+    <link rel="stylesheet" href="assets/styles/uses.css">
+    <link rel="stylesheet" href="assets/styles/impact.css">
+    <link rel="stylesheet" href="assets/styles/team.css">
+    <link rel="stylesheet" href="assets/styles/pricing.css">
+    <link rel="stylesheet" href="assets/styles/footer.css">
+    <link rel="stylesheet" href="assets/styles/faq.css">
+    <link rel="stylesheet" href="assets/styles/navbar.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <a href="#" class="header__logo">
+                <img src="assets/images/supplywok-logo.png" alt="SupplyWok Logo" class="header__logo-img">
+                <span class="header__logo-text">Supply<span class="header__logo-highlight">Wok</span></span>
+            </a>
+
+            <button class="header__toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="header__nav" role="navigation">
+                <div class="header__nav-left">
+                    <ul class="header__menu">
+                        <li><a href="#features" class="header__link header__link--active"
+                                data-i18n="nav_features">FEATURES</a></li>
+                        <li><a href="#login" class="header__link header__link--grey" data-i18n="nav_login">LOGIN</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__nav-right">
+                    <div class="header__cta">
+                        <a href="/register" class="header__cta-btn" data-i18n="nav_cta">SEE SUPPLYWOK IN ACTION</a>
+                    </div>
+                    <ul class="header__lang">
+                        <li><button class="header__lang-btn header__lang-btn--active">EN</button></li>
+                        <li><button class="header__lang-btn">ES</button></li>
+                        <li><button class="header__lang-btn">中文</button></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section (T01) -->
+        <section id="hero" class="hero">
+            <div class="hero__container">
+
+                <div class="hero__content">
+                    <h1 class="hero__title">
+                        <span data-i18n="hero_title_1">FINALLY, A WAY TO RUN AND SCALE YOUR </span><span
+                            class="hero__title-highlight" data-i18n="hero_title_highlight">KITCHEN
+                            OPERATIONS</span>
+                    </h1>
+                    <p class="hero__description" data-i18n="hero_desc">
+                        The all-in-one platform for restaurants and suppliers. Monitor inventory, manage orders, track
+                        real-time conditions, and optimize your operations with smart, data-driven tools.</p>
+
+                    <div class="hero__ctas">
+                        <a href="/register" class="btn btn--primary" data-i18n="hero_btn_try">Try it</a>
+                        <a href=" " class="btn btn--outline" data-i18n="hero_btn_see">See how it works</a>
+                    </div>
+                </div>
+
+                <div class="hero__visual">
+                    <div class="hero__image-container">
+                        <!-- Image placeholder -->
+                        <img src="assets/images/hero-bg.png" alt="Kitchen Operations" class="hero__image">
+
+                        <!-- Floating Badge -->
+                        <div class="hero__badge badge">
+                            <img src="assets/images/icon-stadistic.svg" alt="Stadistic Icon" class="badge__icon">
+                            <div class="badge__text-container">
+                                <strong class="badge__title" data-i18n="hero_badge_title">Operations Optimized</strong>
+                                <p class="badge__description" data-i18n="hero_badge_desc">See your efficiency improve
+                                    with real-time insights and
+                                    automated workflows.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Trust Logos Carousel -->
+            <div class="hero__trust">
+                <p class="hero__trust-text" data-i18n="hero_trust">Early adopters are already using us in Peru</p>
+                <div class="hero__logos-carousel">
+                    <img src="assets/images/logos-carrusel/logo-1.png" alt="Partner Logo 1" class="hero__logo">
+                    <img src="assets/images/logos-carrusel/logo-2.png" alt="Partner Logo 2" class="hero__logo">
+                    <img src="assets/images/logos-carrusel/logo-3.png" alt="Partner Logo 3" class="hero__logo">
+                    <img src="assets/images/logos-carrusel/logo-4.png" alt="Partner Logo 4" class="hero__logo">
+                    <img src="assets/images/logos-carrusel/logo-5.png" alt="Partner Logo 5" class="hero__logo">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section (T05) -->
+        <section id="features" class="features">
+            <div class="features__container">
+                <h2 class="section-title" data-i18n="feat_title">DESIGNED FOR SPEED</h2>
+                <p class="section-subtitle" data-i18n="feat_subtitle">Everything your kitchen needs, nothing it doesn't.
+                </p>
+
+                <div class="features__grid">
+                    <article class="features__card features__card--span2">
+                        <img src="assets/images/smart-icon.svg" alt="Smart Inventory Icon" class="features__card-icon">
+                        <h3 class="features__card-title" data-i18n="feat_1_title">Smart Inventory Control</h3>
+                        <p class="features__card-desc" data-i18n="feat_1_desc">Track your stock in real time and never
+                            run out of critical
+                            ingredients. Get automatic alerts when levels drop and stay ahead of your kitchen demands.
+                        </p>
+                        <div class="features__card-visual">
+                            <div class="features__graphic-placeholder features__graphic-placeholder--dark">
+                                Image Placeholder
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="features__card">
+                        <img src="assets/images/conected-supply-icon.svg" alt="Connected Supply Chain Icon"
+                            class="features__card-icon">
+                        <h3 class="features__card-title" data-i18n="feat_2_title">Connected Supply Chain</h3>
+                        <p class="features__card-desc" data-i18n="feat_2_desc">Place orders, track deliveries, and
+                            coordinate with suppliers
+                            seamlessly. Keep your supply flow constant without manual follow-ups.</p>
+                    </article>
+
+                    <article class="features__card">
+                        <img src="assets/images/monitoring-icon.svg" alt="Real-Time Monitoring Icon"
+                            class="features__card-icon">
+                        <h3 class="features__card-title" data-i18n="feat_3_title">Real-Time Monitoring</h3>
+                        <p class="features__card-desc" data-i18n="feat_3_desc">Monitor kitchen and storage conditions
+                            with integrated sensors.
+                            Detect temperature issues and risks instantly to prevent losses.</p>
+                    </article>
+
+                    <article class="features__card features__card--dark features__card--span2">
+                        <div class="features__card-content">
+                            <h3 class="features__card-title" data-i18n="feat_4_title">Demand Forecasting</h3>
+                            <p class="features__card-desc" data-i18n="feat_4_desc">Understand your consumption patterns
+                                and predict future
+                                needs. Plan purchases smarter and reduce waste with data-backed insights.</p>
+                            <a href="#pricing" class="features__card-link" data-i18n="feat_4_link">EXPLORE PLANS
+                                &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+                <!-- Secondary CTA (T25) -->
+                <div class="section-cta" style="text-align: center; margin-top: 48px;">
+                    <a href="/register" class="btn btn--primary" data-i18n="feat_cta">Try it now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Uses Section (T23) -->
+        <section id="uses" class="uses">
+            <div class="uses__container">
+                <h2 class="section-title"
+                    style="text-align: center; text-transform: uppercase; font-size: 2.5rem; color: #2C2825; font-weight: 900;"
+                    data-i18n="uses_title">
+                    USES THAT YOU WANT</h2>
+                <div class="uses__tabs">
+                    <button class="uses__tab active" data-tab="1" data-i18n="uses_tab_1">Manage your Orders</button>
+                    <button class="uses__tab" data-tab="2" data-i18n="uses_tab_2">Connect with Suppliers</button>
+                    <button class="uses__tab" data-tab="3" data-i18n="uses_tab_3">Monitor your inventory</button>
+                    <button class="uses__tab" data-tab="4" data-i18n="uses_tab_4">Optimize your deliveries</button>
+                    <button class="uses__tab" data-tab="5" data-i18n="uses_tab_5">Connect with customers</button>
+                </div>
+                <div class="uses__content">
+                    <!-- Pane 1: Manage your Orders -->
+                    <div class="uses__pane active" data-pane="1">
+                        <div class="uses__text">
+                            <h3 data-i18n="uses_1_title">CREATE AND LINK YOUR<br>ORDERS EASILY</h3>
+                            <p data-i18n="uses_1_desc">Create and link customer orders to their assigned tables, easily
+                                managing them all on a
+                                single, lockable screen. This way, you can keep the platform open and check it whenever
+                                you want simply by unlocking the screen.<br>You can also use it in the kitchen to manage
+                                order statuses from the same screen, simplifying order management between cooks and
+                                servers.</p>
+
+                            <a href="/register" class="uses__btn">
+                                <span data-i18n="uses_btn">TRY IT NOW</span>
+                                <div class="uses__btn-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="3"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <ul class="uses__list">
+                                <li>
+                                    <svg class="uses__list-icon" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M8 12l3 3 5-6" />
+                                    </svg>
+                                    <span data-i18n="uses_1_li_1">Create Orders for Kitchen</span>
+                                </li>
+                                <li>
+                                    <svg class="uses__list-icon" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M8 12l3 3 5-6" />
+                                    </svg>
+                                    <span data-i18n="uses_1_li_2">Link Orders to a table</span>
+                                </li>
+                                <li>
+                                    <svg class="uses__list-icon" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M8 12l3 3 5-6" />
+                                    </svg>
+                                    <span data-i18n="uses_1_li_3">Manage Orders</span>
+                                </li>
+                                <li>
+                                    <svg class="uses__list-icon" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M8 12l3 3 5-6" />
+                                    </svg>
+                                    <span data-i18n="uses_1_li_4">Only the owner can unlock</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="uses__visual">
+                            <!-- Placeholder -->
+                        </div>
+                    </div>
+
+                    <!-- Pane 2: Connect with Suppliers -->
+                    <div class="uses__pane" data-pane="2">
+                        <div class="uses__text">
+                            <h3 data-i18n="uses_2_title">CONNECT WITH YOUR<br>SUPPLIERS</h3>
+                            <p data-i18n="uses_2_desc">Create and link customer orders to their assigned tables, easily
+                                managing them all on a
+                                single, lockable screen. This way, you can keep the platform open and check it whenever
+                                you want simply by unlocking the screen.<br>You can also use it in the kitchen to manage
+                                order statuses from the same screen, simplifying order management between cooks and
+                                servers.</p>
+
+                            <a href="/register" class="uses__btn">
+                                <span data-i18n="uses_btn">TRY IT NOW</span>
+                                <div class="uses__btn-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="3"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <ul class="uses__list">
+                                <li>
+                                    <svg class="uses__list-icon" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M8 12l3 3 5-6" />
+                                    </svg>
+                                    <span data-i18n="uses_2_li_1">Suppliers with contact information</span>
+                                </li>
+                                <li>
+                                    <svg class="uses__list-icon" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M8 12l3 3 5-6" />
+                                    </svg>
+                                    <span data-i18n="uses_2_li_2">Create supplies delivery orders</span>
+                                </li>
+                                <li>
+                                    <svg class="uses__list-icon" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M8 12l3 3 5-6" />
+                                    </svg>
+                                    <span data-i18n="uses_2_li_3">See status of delivery</span>
+                                </li>
+                                <li>
+                                    <svg class="uses__list-icon" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M8 12l3 3 5-6" />
+                                    </svg>
+                                    <span data-i18n="uses_2_li_4">View all delivery orders</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="uses__visual">
+                            <!-- Placeholder -->
+                        </div>
+                    </div>
+
+                    <!-- Pane 3: Monitor your inventory -->
+                    <div class="uses__pane" data-pane="3">
+                        <div class="uses__text">
+                            <h3 data-i18n="uses_3_title">AUTOMATIC INVENTORY<br>MONITORING</h3>
+                            <p data-i18n="uses_3_desc">Visualize your inventory of supplies, which, thanks to sensors,
+                                can notify you when they
+                                reach a minimum level that you can adjust. This allows you to know more precisely how
+                                many supplies you have left to use in the meals you offer.</p>
+
+                            <a href="/register" class="uses__btn">
+                                <span data-i18n="uses_btn">TRY IT NOW</span>
+                                <div class="uses__btn-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="3"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <ul class="uses__list">
+                                <li>
+                                    <svg class="uses__list-icon" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M8 12l3 3 5-6" />
+                                    </svg>
+                                    <span data-i18n="uses_3_li_1">Connect sensors for better control</span>
+                                </li>
+                                <li>
+                                    <svg class="uses__list-icon" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M8 12l3 3 5-6" />
+                                    </svg>
+                                    <span data-i18n="uses_3_li_2">Sensors custom configuration</span>
+                                </li>
+                                <li>
+                                    <svg class="uses__list-icon" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M8 12l3 3 5-6" />
+                                    </svg>
+                                    <span data-i18n="uses_3_li_3">Immediate alerts</span>
+                                </li>
+                                <li>
+                                    <svg class="uses__list-icon" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M8 12l3 3 5-6" />
+                                    </svg>
+                                    <span data-i18n="uses_3_li_4">Support for problems</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="uses__visual">
+                            <!-- Placeholder -->
+                        </div>
+                    </div>
+
+                    <!-- Pane 4: Optimize your deliveries -->
+                    <div class="uses__pane" data-pane="4">
+                        <div class="uses__text">
+                            <h3 data-i18n="uses_4_title">BETTER DELIVERY<br>SERVICES AND ROUTES</h3>
+                            <p data-i18n="uses_4_desc">By managing your deliveries, we'll help you optimize your
+                                delivery times and routes so
+                                you can fulfill your scheduled orders and maintain trust with your customers.<br>We help
+                                by informing you of the best route to take to deliver your orders to the restaurants
+                                that have requested supplies, all in one route.</p>
+
+                            <a href="/register" class="uses__btn">
+                                <span data-i18n="uses_btn">TRY IT NOW</span>
+                                <div class="uses__btn-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="3"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <ul class="uses__list">
+                                <li>
+                                    <svg class="uses__list-icon" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M8 12l3 3 5-6" />
+                                    </svg>
+                                    <span data-i18n="uses_4_li_1">View the list of pending orders</span>
+                                </li>
+                                <li>
+                                    <svg class="uses__list-icon" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M8 12l3 3 5-6" />
+                                    </svg>
+                                    <span data-i18n="uses_4_li_2">Optimize your time and resources</span>
+                                </li>
+                                <li>
+                                    <svg class="uses__list-icon" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M8 12l3 3 5-6" />
+                                    </svg>
+                                    <span data-i18n="uses_4_li_3">The best possible route</span>
+                                </li>
+                                <li>
+                                    <svg class="uses__list-icon" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M8 12l3 3 5-6" />
+                                    </svg>
+                                    <span data-i18n="uses_4_li_4">Ensure the trust of your customers</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="uses__visual">
+                            <!-- Placeholder -->
+                        </div>
+                    </div>
+
+                    <!-- Pane 5: Connect with customers -->
+                    <div class="uses__pane" data-pane="5">
+                        <div class="uses__text">
+                            <h3 data-i18n="uses_5_title">CONNECT WITH YOUR<br>CUSTOMERS.</h3>
+                            <p data-i18n="uses_5_desc">Restaurants that add you as their supplier can easily place
+                                orders for supplies directly
+                                through the platform, connecting you more quickly and directly with
+                                customers.<br>Additionally, the system, with the necessary information, can anticipate
+                                potential orders for your business.</p>
+
+                            <a href="/register" class="uses__btn">
+                                <span data-i18n="uses_btn">TRY IT NOW</span>
+                                <div class="uses__btn-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="3"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <ul class="uses__list">
+                                <li>
+                                    <svg class="uses__list-icon" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M8 12l3 3 5-6" />
+                                    </svg>
+                                    <span data-i18n="uses_5_li_1">Easily connect with clients</span>
+                                </li>
+                                <li>
+                                    <svg class="uses__list-icon" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M8 12l3 3 5-6" />
+                                    </svg>
+                                    <span data-i18n="uses_5_li_2">Fast orders</span>
+                                </li>
+                                <li>
+                                    <svg class="uses__list-icon" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M8 12l3 3 5-6" />
+                                    </svg>
+                                    <span data-i18n="uses_5_li_3">Predict orders</span>
+                                </li>
+                                <li>
+                                    <svg class="uses__list-icon" viewBox="0 0 24 24">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="M8 12l3 3 5-6" />
+                                    </svg>
+                                    <span data-i18n="uses_5_li_4">Increased profits</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="uses__visual">
+                            <!-- Placeholder -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Impact Section (T22) -->
+        <section id="impact" class="impact">
+            <div class="impact__container">
+                <div class="impact__title-wrapper">
+                    <h2 class="section-title" data-i18n="impact_title">THE<br>SUPPLYWOK<br>IMPACT</h2>
+                </div>
+                <div class="impact__grid">
+                    <article class="impact__card impact__card--1">
+                        <span class="impact__number">21%</span>
+                        <p class="impact__desc" data-i18n="impact_1_desc">Faster supplier management</p>
+                    </article>
+                    <article class="impact__card impact__card--2">
+                        <span class="impact__number">30%</span>
+                        <p class="impact__desc" data-i18n="impact_2_desc">Increase in order and delivery efficiency in
+                            the first year</p>
+                    </article>
+                    <article class="impact__card impact__card--3">
+                        <span class="impact__number">90%</span>
+                        <p class="impact__desc" data-i18n="impact_3_desc">Of our clients are still using the platform
+                            after a year</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section (T07) -->
+        <section id="pricing" class="pricing">
+            <div class="pricing__container">
+                <h2 class="section-title" data-i18n="pricing_title">Our plans for you</h2>
+
+                <div class="pricing__cards">
+                    <!-- Premium Plan -->
+                    <article class="pricing__card">
+                        <span class="pricing__badge">Wok Premium</span>
+                        <div class="pricing__price">
+                            <span class="pricing__currency">S/</span>
+                            <span class="pricing__amount">119</span>
+                            <span class="pricing__period">/mo</span>
+                        </div>
+                        <p class="pricing__desc" data-i18n="pricing_1_desc">Para negocios pequeños y medianos que
+                            necesitan control y eficiencia
+                            desde el día uno.</p>
+
+                        <ul class="pricing__features">
+                            <li data-i18n="pricing_1_li_1">✓ Smart Inventory dashboard</li>
+                            <li data-i18n="pricing_1_li_2">✓ Restocking automático</li>
+                            <li data-i18n="pricing_1_li_3">✓ Hasta 3 proveedores vinculados</li>
+                            <li data-i18n="pricing_1_li_4">✓ Monitoreo IoT básico</li>
+                            <li data-i18n="pricing_1_li_5">✓ Kitchen tickets</li>
+                            <li data-i18n="pricing_1_li_6">✓ Soporte por email</li>
+                        </ul>
+                        <a href="/register?plan=premium" class="btn btn--primary btn--full"
+                            data-i18n="pricing_1_btn">Comenzar con Wok Premium</a>
+                    </article>
+
+                    <!-- Enterprise Plan -->
+                    <article class="pricing__card pricing__card--dark">
+                        <span class="pricing__badge pricing__badge--gold">Wok Enterprise</span>
+                        <div class="pricing__price">
+                            <span class="pricing__amount pricing__amount--custom"
+                                data-i18n="pricing_2_badge">Personalizado</span>
+                        </div>
+                        <p class="pricing__desc" data-i18n="pricing_2_desc">Para operaciones que requieren escala,
+                            múltiples locales y soporte
+                            dedicado.</p>
+
+                        <ul class="pricing__features">
+                            <li data-i18n="pricing_2_li_1">✓ Todo lo de Premium</li>
+                            <li data-i18n="pricing_2_li_2">✓ Proveedores ilimitados</li>
+                            <li data-i18n="pricing_2_li_3">✓ Forecasting avanzado</li>
+                            <li data-i18n="pricing_2_li_4">✓ Monitoreo IoT completo</li>
+                            <li data-i18n="pricing_2_li_5">✓ Multi-local</li>
+                            <li data-i18n="pricing_2_li_6">✓ Soporte prioritario 24/7</li>
+                        </ul>
+                        <a href="/register?plan=enterprise" class="btn btn--gold btn--full"
+                            data-i18n="pricing_2_btn">Comenzar con Wok
+                            Enterprise</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section (T24, T28) -->
+        <section id="team" class="team">
+            <div class="team__container">
+                <h2 class="section-title" data-i18n="team_title">About our team</h2>
+                <div class="team__video-wrapper">
+                    <video controls poster="assets/images/team-poster.jpg" class="team__video">
+                        <source src="assets/videos/team.mp4" type="video/mp4">
+                        <track kind="captions" src="assets/captions/team.vtt" srclang="en" label="English">
+                    </video>
+                    <noscript>
+                        <div class="team__fallback">
+                            <p data-i18n="team_fallback">Team Aurora consists of Zayd Ayasta, Alexandra Meza, Joan
+                                Payano, Marcelo Cuadros, and
+                                Juan Wang.</p>
+                        </div>
+                    </noscript>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section (T10) -->
+        <section class="faq" id="faq">
+            <div class="faq__container">
+                <span class="faq__badge" data-i18n="faq_badge">FAQs</span>
+                <h2 class="section-title" data-i18n="faq_title">HERE TO HELP!</h2>
+
+                <div class="faq__list">
+                    <!-- FAQ 1 (Active by default) -->
+                    <div class="faq__item faq__item--active">
+                        <button class="faq__question" aria-expanded="true">
+                            <span data-i18n="faq_1_q">What exactly does SupplyWok do?</span>
+                            <span class="faq__icon">×</span>
+                        </button>
+                        <div class="faq__answer">
+                            <p data-i18n="faq_1_a">SupplyWok is an all-in-one platform that helps restaurants and
+                                suppliers digitalize
+                                operations efficiently. It combines inventory tracking, order management, real-time
+                                monitoring, and demand forecasting into a single system — allowing you to manage your
+                                supply chain with better visibility and control.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span data-i18n="faq_2_q">How much does it cost?</span>
+                            <span class="faq__icon">+</span>
+                        </button>
+                        <div class="faq__answer">
+                            <p data-i18n="faq_2_a">Our Wok Premium plan starts at S/119 per month. For larger operations
+                                we offer the Wok
+                                Enterprise plan with custom pricing tailored to your needs. Contact us for a
+                                personalized quote.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span data-i18n="faq_3_q">How is SupplyWok different from other management systems?</span>
+                            <span class="faq__icon">+</span>
+                        </button>
+                        <div class="faq__answer">
+                            <p data-i18n="faq_3_a">Unlike generic management tools, SupplyWok is purpose-built for the
+                                restaurant supply
+                                chain — connecting kitchens and suppliers in one ecosystem with IoT monitoring,
+                                predictive demand, and real-time order tracking.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span data-i18n="faq_4_q">I'm a supplier. Will this help me get more contacts?</span>
+                            <span class="faq__icon">+</span>
+                        </button>
+                        <div class="faq__answer">
+                            <p data-i18n="faq_4_a">Absolutely. SupplyWok gives suppliers visibility into restaurant
+                                demand, streamlines
+                                order management, and helps you build stronger relationships with your restaurant
+                                clients through reliable delivery tracking.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 5 -->
+                    <div class="faq__item">
+                        <button class="faq__question" aria-expanded="false">
+                            <span data-i18n="faq_5_q">Does SupplyWok require special hardware to work?</span>
+                            <span class="faq__icon">+</span>
+                        </button>
+                        <div class="faq__answer">
+                            <p data-i18n="faq_5_a">For basic inventory and order management, no special hardware is
+                                needed. For IoT
+                                monitoring features (temperature, humidity), we support compatible sensor devices that
+                                can be easily installed in your kitchen and storage areas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section (T20, T21) -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__brand">
+                <img src="assets/images/supplywok-logo.png" alt="SupplyWok Logo" class="footer__logo-img">
+                <img src="assets/images/supplywok-text.png" alt="SupplyWok Text" class="footer__logo-text">
+            </div>
+            <nav class="footer__nav">
+                <a href="#restaurants" data-i18n="footer_nav_1">RESTAURANTS</a>
+                <a href="#suppliers" data-i18n="footer_nav_2">SUPPLIERS</a>
+                <a href="#logistics" data-i18n="footer_nav_3">LOGISTICS</a>
+                <a href="#inventory" data-i18n="footer_nav_4">INVENTORY</a>
+                <a href="#analytics" data-i18n="footer_nav_5">ANALYTICS</a>
+            </nav>
+            <div class="footer__copyright">
+                <p data-i18n="footer_copy">© 2024 SUPPLY WOK. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/scripts/i18n.js"></script>
+    <script src="assets/scripts/faq.js"></script>
+    <script src="assets/scripts/navbar.js"></script>
+    <script src="assets/scripts/uses.js"></script>
+</body>
+
+</html>
