@@ -1,0 +1,111 @@
+/* =============================================
+   IMPACT SECTION (T22)
+   ============================================= */
+
+.impact {
+  padding: 80px 24px 0 24px;
+  background-color: var(--color-bg);
+}
+
+.impact__container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-end;
+  gap: 32px;
+  min-height: 400px;
+}
+
+.impact__title-wrapper {
+  flex: 1;
+  align-self: flex-start;
+  margin-top: 40px;
+}
+
+.impact .section-title {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--color-black);
+  text-align: left;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.impact__grid {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  flex: 3;
+}
+
+.impact__card {
+  flex: 1;
+  padding: 32px 16px;
+  border-radius: 24px 24px 0 0; /* Rounded top corners only to look like bars */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 32px; /* Space between number and text */
+}
+
+/* Base heights simulating a bar chart */
+.impact__card--1 {
+  background-color: #B2827B; /* Dusty rose */
+  min-height: 220px;
+}
+
+.impact__card--2 {
+  background-color: #8D7B75; /* Grayish brown */
+  min-height: 300px;
+}
+
+.impact__card--3 {
+  background-color: #A19992; /* Light grayish brown */
+  min-height: 420px;
+}
+
+.impact__number {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 3rem;
+  color: var(--color-black);
+  line-height: 1;
+}
+
+.impact__desc {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1rem;
+  color: var(--color-black);
+  line-height: 1.4;
+  margin-top: auto; /* Push text to the bottom if needed, or leave naturally flowing */
+}
+
+@media (max-width: 900px) {
+  .impact__container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 40px;
+  }
+  .impact__title-wrapper {
+    margin-top: 0;
+    align-self: center;
+    text-align: center;
+  }
+  .impact .section-title {
+    text-align: center;
+  }
+  .impact__grid {
+    align-items: stretch;
+    flex-direction: column;
+    gap: 24px;
+    height: auto;
+  }
+  .impact__card {
+    border-radius: var(--radius-md); /* All corners rounded on mobile */
+    min-height: auto;
+    padding: 32px 24px;
+    gap: 16px;
+  }
+}
