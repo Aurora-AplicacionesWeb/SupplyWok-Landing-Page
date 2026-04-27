@@ -78,7 +78,7 @@
 }
 
 .hero__ctas .btn--outline:hover {
-  background-color: rgba(0,0,0,0.05);
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .hero__visual {
@@ -117,7 +117,7 @@
   align-items: flex-start;
   max-width: 300px;
   text-align: left;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .badge__icon {
@@ -179,4 +179,87 @@
   opacity: 1;
   filter: grayscale(0%);
   transform: scale(1.05);
+}
+
+/* === RESPONSIVE (T04) === */
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 60px 20px 40px;
+  }
+
+  .hero__container {
+    gap: 40px;
+  }
+
+  .hero__title {
+    margin-bottom: 20px;
+  }
+
+  .hero__image {
+    min-height: 350px;
+  }
+
+  .hero__logos-carousel {
+    gap: 24px;
+  }
+
+  .hero__logo {
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 16px 32px;
+  }
+
+  .hero__container {
+    gap: 32px;
+  }
+
+  .hero__description {
+    font-size: 1rem;
+    margin-bottom: 32px;
+  }
+
+  .hero__ctas {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .hero__ctas .btn {
+    width: 100%;
+  }
+
+  .hero__badge {
+    bottom: 16px;
+    right: 16px;
+    padding: 16px;
+    max-width: calc(100% - 32px);
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .badge__icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .badge__title {
+    font-size: 1rem;
+  }
+
+  .badge__description {
+    font-size: 0.8rem;
+  }
+
+  .hero__logos-carousel {
+    gap: 16px;
+  }
+
+  .hero__logo {
+    max-width: 80px;
+  }
 }

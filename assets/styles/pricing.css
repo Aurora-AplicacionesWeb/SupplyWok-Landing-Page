@@ -1,0 +1,150 @@
+/* =============================================
+   PRICING SECTION STYLES (T08)
+   ============================================= */
+
+.pricing {
+  padding: 80px 24px;
+  background-color: var(--color-bg);
+}
+
+.pricing__container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.pricing__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.pricing__card {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 48px 40px;
+  border: 1px solid var(--color-border);
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing__card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.pricing__card--dark {
+  background: var(--color-bg-dark);
+  color: var(--color-white);
+  border-color: #333;
+}
+
+.pricing__badge {
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--color-primary);
+  display: block;
+  margin-bottom: 24px;
+}
+
+.pricing__badge--gold {
+  color: var(--color-secondary);
+}
+
+.pricing__price {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.pricing__currency {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.pricing__amount {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.pricing__amount--custom {
+  font-size: 2.2rem;
+}
+
+.pricing__period {
+  font-size: 0.95rem;
+  color: var(--color-text-light);
+}
+
+.pricing__card--dark .pricing__period {
+  color: #999;
+}
+
+.pricing__desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 32px;
+  color: var(--color-text-light);
+}
+
+.pricing__card--dark .pricing__desc {
+  color: #ccc;
+}
+
+.pricing__features {
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex-grow: 1;
+  /* Pushes the button to the bottom so buttons align */
+}
+
+.pricing__features li {
+  font-size: 0.95rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+/* === SPECIFIC PRICING BUTTON STYLES === */
+.btn--gold {
+  background: var(--color-secondary);
+  color: var(--color-black);
+  box-shadow: 0 4px 16px rgba(233, 184, 36, 0.25);
+}
+
+.btn--gold:hover {
+  background: #d4a61e;
+  transform: translateY(-2px);
+}
+
+.btn--full {
+  width: 100%;
+}
+
+
+/* === RESPONSIVE (T08) === */
+@media (max-width: 768px) {
+  .pricing {
+    padding: 60px 16px;
+  }
+
+  .pricing__cards {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .pricing__card {
+    padding: 32px 24px;
+  }
+}
