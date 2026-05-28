@@ -1,6 +1,6 @@
 const translations = {
     "en": {
-        "nav_features": "FEATURES",
+        "nav_features": "HOME",
         "nav_login": "LOGIN",
         "nav_cta": "SEE SUPPLYWOK IN ACTION",
         "hero_title_1": "FINALLY, A WAY TO RUN AND SCALE YOUR ",
@@ -101,10 +101,35 @@ const translations = {
         "footer_nav_3": "LOGISTICS",
         "footer_nav_4": "INVENTORY",
         "footer_nav_5": "ANALYTICS",
-        "footer_copy": "© 2024 SUPPLY WOK. ALL RIGHTS RESERVED."
+        "footer_copy": "© 2024 SUPPLY WOK. ALL RIGHTS RESERVED.",
+        "team_badge": "• TEAM",
+        "terms_title": "Terms & Conditions",
+        "terms_updated": "<strong>Last update:</strong> May 15, 2026",
+        "terms_intro": "Welcome to SupplyWok. By accessing and using this website or any of our services, you accept these Terms & Conditions. If you do not agree with any part of them, you must not use the platform.",
+        "terms_h1": "1. Use of Service",
+        "terms_p1_a": "SupplyWok offers a platform for supply management, inventory, orders, monitoring, and operations for restaurants and suppliers.",
+        "terms_p1_b": "You agree to use the service only for lawful purposes and in accordance with these conditions.",
+        "terms_h2": "2. Account Registration",
+        "terms_p2": "To access certain features, you may need to create an account. You are responsible for maintaining the confidentiality of your credentials and for all activities carried out under your account.",
+        "terms_h3": "3. User Responsibilities",
+        "terms_li3_1": "Provide true and up-to-date information.",
+        "terms_li3_2": "Do not attempt to compromise the security of the platform.",
+        "terms_li3_3": "Do not use the service for fraudulent or illegal purposes.",
+        "terms_li3_4": "Respect the rights of third parties and applicable regulations.",
+        "terms_h4": "4. Intellectual Property",
+        "terms_p4": "All content, design, logos, texts, images, trademarks, and elements of the site belong to SupplyWok or their respective owners. Copying, reproducing, or distributing these elements without prior written authorization is not permitted.",
+        "terms_h5": "5. Service Availability",
+        "terms_p5": "We make reasonable efforts to keep the service available, but we do not guarantee that it will be free of interruptions, errors, or technical failures.",
+        "terms_h6": "6. Limitation of Liability",
+        "terms_p6": "SupplyWok will not be liable for indirect, incidental, or consequential damages resulting from the use or inability to use the platform, unless applicable law provides otherwise.",
+        "terms_h7": "7. Modifications",
+        "terms_p7": "We may update these Terms & Conditions at any time. Modifications will take effect upon publication on this page.",
+        "terms_h8": "8. Contact",
+        "terms_p8": "If you have questions about these Terms & Conditions, you can contact the SupplyWok team through the project's official channels.",
+        "terms_back": "← Back to home"
     },
     "es": {
-        "nav_features": "CARACTERÍSTICAS",
+        "nav_features": "INICIO",
         "nav_login": "INGRESAR",
         "nav_cta": "VER SUPPLYWOK EN ACCIÓN",
         "hero_title_1": "FINALMENTE, UNA FORMA DE DIRIGIR Y ESCALAR LAS ",
@@ -205,10 +230,35 @@ const translations = {
         "footer_nav_3": "LOGÍSTICA",
         "footer_nav_4": "INVENTARIO",
         "footer_nav_5": "ANALÍTICAS",
-        "footer_copy": "© 2024 SUPPLY WOK. TODOS LOS DERECHOS RESERVADOS."
+        "footer_copy": "© 2024 SUPPLY WOK. TODOS LOS DERECHOS RESERVADOS.",
+        "team_badge": "• EQUIPO",
+        "terms_title": "Términos y Condiciones",
+        "terms_updated": "<strong>Última actualización:</strong> 15 de mayo de 2026",
+        "terms_intro": "Bienvenido a SupplyWok. Al acceder y usar este sitio web o cualquiera de nuestros servicios, aceptas los presentes Términos y Condiciones. Si no estás de acuerdo con alguna parte de ellos, no debes usar la plataforma.",
+        "terms_h1": "1. Uso del servicio",
+        "terms_p1_a": "SupplyWok ofrece una plataforma para gestión de abastecimiento, inventario, pedidos, monitoreo y operaciones para restaurantes y proveedores.",
+        "terms_p1_b": "Te comprometes a usar el servicio únicamente para fines lícitos y de acuerdo con estas condiciones.",
+        "terms_h2": "2. Registro de cuenta",
+        "terms_p2": "Para acceder a ciertas funciones, podrías necesitar crear una cuenta. Eres responsable de mantener la confidencialidad de tus credenciales y de toda actividad realizada desde tu cuenta.",
+        "terms_h3": "3. Responsabilidades del usuario",
+        "terms_li3_1": "Proporcionar información veraz y actualizada.",
+        "terms_li3_2": "No intentar vulnerar la seguridad de la plataforma.",
+        "terms_li3_3": "No usar el servicio para fines fraudulentos o ilegales.",
+        "terms_li3_4": "Respetar los derechos de terceros y la normativa aplicable.",
+        "terms_h4": "4. Propiedad intelectual",
+        "terms_p4": "Todo el contenido, diseño, logotipos, textos, imágenes, marcas y elementos del sitio pertenecen a SupplyWok o a sus respectivos titulares. No está permitido copiar, reproducir o distribuir estos elementos sin autorización previa por escrito.",
+        "terms_h5": "5. Disponibilidad del servicio",
+        "terms_p5": "Hacemos esfuerzos razonables para mantener el servicio disponible, pero no garantizamos que esté libre de interrupciones, errores o fallas técnicas.",
+        "terms_h6": "6. Limitación de responsabilidad",
+        "terms_p6": "SupplyWok no será responsable por daños indirectos, incidentales o consecuentes derivados del uso o imposibilidad de uso de la plataforma, salvo que la ley aplicable disponga lo contrario.",
+        "terms_h7": "7. Modificaciones",
+        "terms_p7": "Podemos actualizar estos Términos y Condiciones en cualquier momento. Las modificaciones entrarán en vigor desde su publicación en esta página.",
+        "terms_h8": "8. Contacto",
+        "terms_p8": "Si tienes preguntas sobre estos Términos y Condiciones, puedes comunicarte con el equipo de SupplyWok a través de los canales oficiales del proyecto.",
+        "terms_back": "← Volver al inicio"
     },
     "zh": {
-        "nav_features": "功能",
+        "nav_features": "首页",
         "nav_login": "登录",
         "nav_cta": "查看 SUPPLYWOK",
         "hero_title_1": "终于，一种管理和扩展 ",
@@ -309,20 +359,45 @@ const translations = {
         "footer_nav_3": "物流",
         "footer_nav_4": "库存",
         "footer_nav_5": "分析",
-        "footer_copy": "© 2024 SUPPLY WOK。保留所有权利。"
+        "footer_copy": "© 2024 SUPPLY WOK。保留所有权利。",
+        "team_badge": "• 团队",
+        "terms_title": "服务条款",
+        "terms_updated": "<strong>最近更新：</strong>2026年5月15日",
+        "terms_intro": "欢迎来到 SupplyWok。通过访问和使用本网站或我们的任何服务，即表示您接受这些服务条款。如果您不同意其中的任何部分，则不得使用该平台。",
+        "terms_h1": "1. 服务使用",
+        "terms_p1_a": "SupplyWok 为餐厅和供应商提供了一个用于供应管理、库存、订单、监控和运营的平台。",
+        "terms_p1_b": "您同意仅出于合法目的并按照这些条款使用本服务。",
+        "terms_h2": "2. 账户注册",
+        "terms_p2": "要访问某些功能，您可能需要创建一个帐户。您有责任维护您的凭据的机密性，并对在您的帐户下进行的所有活动负责。",
+        "terms_h3": "3. 用户责任",
+        "terms_li3_1": "提供真实且最新的信息。",
+        "terms_li3_2": "不要试图破坏平台的安全性。",
+        "terms_li3_3": "不要将服务用于欺诈或非法目的。",
+        "terms_li3_4": "尊重第三方的权利和适用法规。",
+        "terms_h4": "4. 知识产权",
+        "terms_p4": "本网站的所有内容、设计、徽标、文本、图像、商标和元素均属于 SupplyWok 或其各自所有者。未经事先书面授权，不得复制、再造或分发这些元素。",
+        "terms_h5": "5. 服务可用性",
+        "terms_p5": "我们尽合理努力保持服务的可用性，但我们不保证服务不会中断、无错误或无技术故障。",
+        "terms_h6": "6. 责任限制",
+        "terms_p6": "对于因使用或无法使用平台而导致的间接、附带或后果性损害，SupplyWok 不承担任何责任，除非适用法律另有规定。",
+        "terms_h7": "7. 条款修改",
+        "terms_p7": "我们可能随时更新这些服务条款。修改自发布在此页面起生效。",
+        "terms_h8": "8. 联系方式",
+        "terms_p8": "如果您对这些服务条款有任何疑问，可以通过项目的官方渠道与 SupplyWok 团队联系。",
+        "terms_back": "← 返回首页"
     }
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-    const langBtns = document.querySelectorAll('.header__lang-btn');
+    const langBtns = document.querySelectorAll('.header-lang-btn');
 
     langBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
             // Remove active class from all
-            langBtns.forEach(b => b.classList.remove('header__lang-btn--active'));
+            langBtns.forEach(b => b.classList.remove('header-lang-btn--active'));
             // Add active class to clicked
             const clickedBtn = e.target;
-            clickedBtn.classList.add('header__lang-btn--active');
+            clickedBtn.classList.add('header-lang-btn--active');
 
             let lang = 'en';
             if (clickedBtn.textContent.trim() === 'ES') lang = 'es';
@@ -343,6 +418,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else {
                     el.textContent = translations[lang][key];
                 }
+            }
+        });
+
+        const htmlElements = document.querySelectorAll('[data-i18n-html]');
+        htmlElements.forEach(el => {
+            const key = el.getAttribute('data-i18n-html');
+            if (translations[lang] && translations[lang][key]) {
+                el.innerHTML = translations[lang][key];
             }
         });
     }

@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const tabs = document.querySelectorAll('.uses__tab');
-    const panes = document.querySelectorAll('.uses__pane');
+    const tabs = document.querySelectorAll('.uses-tab');
+    const panes = document.querySelectorAll('.uses-pane');
 
     tabs.forEach(tab => {
         tab.addEventListener('click', () => {
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Find corresponding pane and make it active
             const targetId = tab.getAttribute('data-tab');
-            const targetPane = document.querySelector(`.uses__pane[data-pane="${targetId}"]`);
+            const targetPane = document.querySelector(`.uses-pane[data-pane="${targetId}"]`);
             if (targetPane) {
                 targetPane.classList.add('active');
             }

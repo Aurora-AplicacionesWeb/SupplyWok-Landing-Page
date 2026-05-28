@@ -3,9 +3,9 @@
    ============================================= */
 
 document.addEventListener('DOMContentLoaded', () => {
-    const toggleBtn = document.querySelector('.header__toggle');
-    const navMenu = document.querySelector('.header__nav');
-    const navLinks = document.querySelectorAll('.header__link');
+    const toggleBtn = document.querySelector('.header-toggle');
+    const navMenu = document.querySelector('.header-nav');
+    const navLinks = document.querySelectorAll('.header-link');
 
     if (!toggleBtn || !navMenu) return;
 
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleBtn.addEventListener('click', () => {
         const isExpanded = toggleBtn.getAttribute('aria-expanded') === 'true';
         toggleBtn.setAttribute('aria-expanded', !isExpanded);
-        navMenu.classList.toggle('header__nav--open');
+        navMenu.classList.toggle('header-nav--open');
         
         // Prevent body scroll when menu is open
         if (!isExpanded) {
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
             toggleBtn.setAttribute('aria-expanded', 'false');
-            navMenu.classList.remove('header__nav--open');
+            navMenu.classList.remove('header-nav--open');
             document.body.style.overflow = '';
         });
     });
