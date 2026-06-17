@@ -1448,4 +1448,79 @@ a:focus-visible {
   }
 }
 
+/* =============================================
+   CTA SECTION STYLES
+   ============================================= */
+.cta {
+  padding: 100px 24px;
+  background-color: var(--color-white);
+  background-image: url('../images/fondo-cta.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.cta-title {
+  font-family: var(--font-heading);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+.cta-desc {
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  color: var(--color-text-light);
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.cta-buttons .btn {
+  padding: 14px 28px;
+  font-size: 1rem;
+  border-radius: 50px; /* Pill shape similar to reference image */
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .cta {
+    padding: 60px 16px;
+  }
+  .cta-title {
+    font-size: 2.2rem;
+  }
+  .cta-desc {
+    font-size: 1rem;
+  }
+  .cta-buttons {
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+  }
+  .cta-buttons .btn {
+    width: 100%;
+  }
+}
+
 
