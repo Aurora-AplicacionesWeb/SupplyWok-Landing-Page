@@ -135,7 +135,19 @@ const translations = {
         "cta_title": "Start using Supply Wok today",
         "cta_desc": "Dive into our documentation or start deploying today with our starter kits made for restaurants and suppliers.",
         "cta_btn_use": "Use now",
-        "cta_btn_features": "Features"
+        "cta_btn_features": "Features",
+        "nav_restaurants": "RESTAURANTS",
+        "nav_suppliers": "SUPPLIERS",
+        "rest_meta_title": "Restaurants Benefits | SupplyWok",
+        "rest_meta_desc": "Discover how SupplyWok optimizes kitchen operations, manages inventory, and coordinates suppliers.",
+        "rest_hero_title": "EMPOWER YOUR KITCHEN AND DECREASE COSTS",
+        "rest_hero_desc": "Streamline your restaurant's inventory control, simplify order placement, and seamlessly connect with your suppliers. Focus on crafting great food while SupplyWok handles the logistics.",
+        "supp_meta_title": "Suppliers Benefits | SupplyWok",
+        "supp_meta_desc": "Optimize deliveries, connect with restaurant clients, and predict demand with SupplyWok.",
+        "supp_hero_title": "OPTIMIZE YOUR DELIVERY AND SCALE YOUR CLIENTS",
+        "supp_hero_desc": "Increase delivery route efficiency, receive instant orders from your buyers, and predict supply demands in advance. Empower your business to serve more clients with precision.",
+        "benefits_title_rest": "Benefits designed for Restaurants",
+        "benefits_title_supp": "Benefits designed for Suppliers"
     },
     "es": {
         "nav_features": "INICIO",
@@ -273,7 +285,19 @@ const translations = {
         "cta_title": "Comienza a usar Supply Wok hoy",
         "cta_desc": "Sumérgete en nuestra documentación o comienza a implementar hoy mismo con nuestros kits de inicio hechos para restaurantes y proveedores.",
         "cta_btn_use": "Úsalo ahora",
-        "cta_btn_features": "Características"
+        "cta_btn_features": "Características",
+        "nav_restaurants": "RESTAURANTES",
+        "nav_suppliers": "PROVEEDORES",
+        "rest_meta_title": "Beneficios para Restaurantes | SupplyWok",
+        "rest_meta_desc": "Descubre cómo SupplyWok optimiza las operaciones de cocina, gestiona el inventario y coordina proveedores.",
+        "rest_hero_title": "EMPODERA TU COCINA Y REDUCE COSTOS",
+        "rest_hero_desc": "Agiliza el control de inventario de tu restaurante, simplifica la creación de pedidos y conéctate sin problemas con tus proveedores. Concéntrate en cocinar mientras SupplyWok maneja la logística.",
+        "supp_meta_title": "Beneficios para Proveedores | SupplyWok",
+        "supp_meta_desc": "Optimiza entregas, conéctate con clientes de restaurantes y predice la demanda con SupplyWok.",
+        "supp_hero_title": "OPTIMIZA TU DISTRIBUCIÓN Y ESCALA TUS CLIENTES",
+        "supp_hero_desc": "Incrementa la eficiencia de tus rutas de reparto, recibe pedidos al instante de tus compradores y anticipa la demanda de suministros. Potencia tu negocio para servir a más clientes con precisión.",
+        "benefits_title_rest": "Beneficios diseñados para Restaurantes",
+        "benefits_title_supp": "Beneficios diseñados para Proveedores"
     },
     "zh": {
         "nav_features": "首页",
@@ -411,7 +435,19 @@ const translations = {
         "cta_title": "今天开始使用 Supply Wok",
         "cta_desc": "深入阅读我们的文档，或者立即使用我们为餐厅和供应商制作的入门套件进行部署。",
         "cta_btn_use": "立即使用",
-        "cta_btn_features": "功能特点"
+        "cta_btn_features": "功能特点",
+        "nav_restaurants": "餐厅",
+        "nav_suppliers": "供应商",
+        "rest_meta_title": "餐厅效益 | SupplyWok",
+        "rest_meta_desc": "了解 SupplyWok 如何优化厨房运营、管理库存和协调供应商。",
+        "rest_hero_title": "助力您的厨房并降低成本",
+        "rest_hero_desc": "简化餐厅的库存控制，简化订单下达，并与您的供应商无缝连接。专注于制作美味佳肴，而 SupplyWok 负责物流。",
+        "supp_meta_title": "供应商效益 | SupplyWok",
+        "supp_meta_desc": "使用 SupplyWok 优化交付、与餐厅客户建立联系并预测需求。",
+        "supp_hero_title": "优化您的配送并扩大您的客户群",
+        "supp_hero_desc": "提高配送路线效率，即时接收买家订单，并提前预测供应需求。助力您的业务精准服务更多客户。",
+        "benefits_title_rest": "为餐厅设计的专属效益",
+        "benefits_title_supp": "为供应商设计的专属效益"
     }
 };
 
@@ -430,9 +466,23 @@ document.addEventListener('DOMContentLoaded', () => {
             if (clickedBtn.textContent.trim() === 'ES') lang = 'es';
             if (clickedBtn.textContent.trim() === '中文') lang = 'zh';
 
+            localStorage.setItem('supplywok-lang', lang);
             updateLanguage(lang);
         });
     });
+
+    // Restore language preference on load
+    const savedLang = localStorage.getItem('supplywok-lang') || 'en';
+    langBtns.forEach(btn => {
+        const btnText = btn.textContent.trim();
+        if ((savedLang === 'en' && btnText === 'EN') ||
+            (savedLang === 'es' && btnText === 'ES') ||
+            (savedLang === 'zh' && btnText === '中文')) {
+            langBtns.forEach(b => b.classList.remove('header-lang-btn--active'));
+            btn.classList.add('header-lang-btn--active');
+        }
+    });
+    updateLanguage(savedLang);
 
     function updateLanguage(lang) {
         const elements = document.querySelectorAll('[data-i18n]');
