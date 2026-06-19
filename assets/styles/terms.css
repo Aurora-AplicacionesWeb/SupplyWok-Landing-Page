@@ -1,0 +1,47 @@
+/* =============================================
+   SUPPLYWOK LANDING PAGE — TERMS & CONDITIONS STYLES
+   ============================================= */
+
+.terms {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 96px 24px 64px;
+    color: #2C2825;
+    line-height: 1.7;
+}
+
+.terms-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.terms-updated {
+    margin-bottom: 32px;
+    color: #6b625c;
+}
+
+.terms h2 {
+    font-size: 1.4rem;
+    margin: 32px 0 12px;
+    font-weight: 800;
+}
+
+.terms p,
+.terms li {
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+.terms ul {
+    padding-left: 20px;
+}
+
+.terms-back {
+    display: inline-block;
+    margin-top: 32px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #0f766e;
+}

@@ -1,12 +1,12 @@
 const translations = {
     "en": {
-        "nav_features": "FEATURES",
+        "nav_features": "HOME",
         "nav_login": "LOGIN",
         "nav_cta": "SEE SUPPLYWOK IN ACTION",
         "hero_title_1": "FINALLY, A WAY TO RUN AND SCALE YOUR ",
         "hero_title_highlight": "KITCHEN OPERATIONS",
         "hero_desc": "The all-in-one platform for restaurants and suppliers. Monitor inventory, manage orders, track real-time conditions, and optimize your operations with smart, data-driven tools.",
-        "hero_btn_try": "Try it",
+        "hero_btn_try": "Use now",
         "hero_btn_see": "See how it works",
         "hero_badge_title": "Operations Optimized",
         "hero_badge_desc": "See your efficiency improve with real-time insights and automated workflows.",
@@ -22,7 +22,7 @@ const translations = {
         "feat_4_title": "Demand Forecasting",
         "feat_4_desc": "Understand your consumption patterns and predict future needs. Plan purchases smarter and reduce waste with data-backed insights.",
         "feat_4_link": "EXPLORE PLANS →",
-        "feat_cta": "Try it now",
+        "feat_cta": "Use now",
         "uses_title": "USES THAT YOU WANT",
         "uses_tab_1": "Manage your Orders",
         "uses_tab_2": "Connect with Suppliers",
@@ -59,29 +59,29 @@ const translations = {
         "uses_5_li_2": "Fast orders",
         "uses_5_li_3": "Predict orders",
         "uses_5_li_4": "Increased profits",
-        "uses_btn": "TRY IT NOW",
+        "uses_btn": "USE NOW",
         "impact_title": "THE<br>SUPPLYWOK<br>IMPACT",
         "impact_1_desc": "Faster supplier management",
         "impact_2_desc": "Increase in order and delivery efficiency in the first year",
         "impact_3_desc": "Of our clients are still using the platform after a year",
         "pricing_title": "Our plans for you",
-        "pricing_1_desc": "Para negocios pequeños y medianos que necesitan control y eficiencia desde el día uno.",
+        "pricing_1_desc": "For small and medium businesses that need control and efficiency from day one.",
         "pricing_1_li_1": "✓ Smart Inventory dashboard",
-        "pricing_1_li_2": "✓ Restocking automático",
-        "pricing_1_li_3": "✓ Hasta 3 proveedores vinculados",
-        "pricing_1_li_4": "✓ Monitoreo IoT básico",
+        "pricing_1_li_2": "✓ Automatic restocking",
+        "pricing_1_li_3": "✓ Up to 3 linked suppliers",
+        "pricing_1_li_4": "✓ Basic IoT monitoring",
         "pricing_1_li_5": "✓ Kitchen tickets",
-        "pricing_1_li_6": "✓ Soporte por email",
-        "pricing_1_btn": "Comenzar con Wok Premium",
-        "pricing_2_badge": "Personalizado",
-        "pricing_2_desc": "Para operaciones que requieren escala, múltiples locales y soporte dedicado.",
-        "pricing_2_li_1": "✓ Todo lo de Premium",
-        "pricing_2_li_2": "✓ Proveedores ilimitados",
-        "pricing_2_li_3": "✓ Forecasting avanzado",
-        "pricing_2_li_4": "✓ Monitoreo IoT completo",
-        "pricing_2_li_5": "✓ Multi-local",
-        "pricing_2_li_6": "✓ Soporte prioritario 24/7",
-        "pricing_2_btn": "Comenzar con Wok Enterprise",
+        "pricing_1_li_6": "✓ Email support",
+        "pricing_1_btn": "Get started with Wok Premium",
+        "pricing_2_badge": "Custom",
+        "pricing_2_desc": "For operations requiring scale, multiple locations, and dedicated support.",
+        "pricing_2_li_1": "✓ Everything in Premium",
+        "pricing_2_li_2": "✓ Unlimited suppliers",
+        "pricing_2_li_3": "✓ Advanced forecasting",
+        "pricing_2_li_4": "✓ Full IoT monitoring",
+        "pricing_2_li_5": "✓ Multi-location",
+        "pricing_2_li_6": "✓ 24/7 Priority support",
+        "pricing_2_btn": "Get started with Wok Enterprise",
         "team_title": "About our team",
         "team_fallback": "Team Aurora consists of Zayd Ayasta, Alexandra Meza, Joan Payano, Marcelo Cuadros, and Juan Wang.",
         "faq_badge": "FAQs",
@@ -101,16 +101,62 @@ const translations = {
         "footer_nav_3": "LOGISTICS",
         "footer_nav_4": "INVENTORY",
         "footer_nav_5": "ANALYTICS",
-        "footer_copy": "© 2024 SUPPLY WOK. ALL RIGHTS RESERVED."
+        "footer_copy": "© 2024 SUPPLY WOK. ALL RIGHTS RESERVED.",
+        "team_badge": "• TEAM",
+        "terms_title": "Terms & Conditions",
+        "terms_updated": "<strong>Last update:</strong> May 15, 2026",
+        "terms_intro": "Welcome to SupplyWok. By accessing and using this website or any of our services, you accept these Terms & Conditions. If you do not agree with any part of them, you must not use the platform.",
+        "terms_h1": "1. Use of Service",
+        "terms_p1_a": "SupplyWok offers a platform for supply management, inventory, orders, monitoring, and operations for restaurants and suppliers.",
+        "terms_p1_b": "You agree to use the service only for lawful purposes and in accordance with these conditions.",
+        "terms_h2": "2. Account Registration",
+        "terms_p2": "To access certain features, you may need to create an account. You are responsible for maintaining the confidentiality of your credentials and for all activities carried out under your account.",
+        "terms_h3": "3. User Responsibilities",
+        "terms_li3_1": "Provide true and up-to-date information.",
+        "terms_li3_2": "Do not attempt to compromise the security of the platform.",
+        "terms_li3_3": "Do not use the service for fraudulent or illegal purposes.",
+        "terms_li3_4": "Respect the rights of third parties and applicable regulations.",
+        "terms_h4": "4. Intellectual Property",
+        "terms_p4": "All content, design, logos, texts, images, trademarks, and elements of the site belong to SupplyWok or their respective owners. Copying, reproducing, or distributing these elements without prior written authorization is not permitted.",
+        "terms_h5": "5. Service Availability",
+        "terms_p5": "We make reasonable efforts to keep the service available, but we do not guarantee that it will be free of interruptions, errors, or technical failures.",
+        "terms_h6": "6. Limitation of Liability",
+        "terms_p6": "SupplyWok will not be liable for indirect, incidental, or consequential damages resulting from the use or inability to use the platform, unless applicable law provides otherwise.",
+        "terms_h7": "7. Modifications",
+        "terms_p7": "We may update these Terms & Conditions at any time. Modifications will take effect upon publication on this page.",
+        "terms_h8": "8. Contact",
+        "terms_p8": "If you have questions about these Terms & Conditions, you can contact the SupplyWok team through the project's official channels.",
+        "terms_back": "← Back to home",
+        "pricing_1_badge": "Wok Premium",
+        "pricing_currency": "S/",
+        "pricing_period_mo": "/mo",
+        "pricing_2_badge_name": "Wok Enterprise",
+        "footer_nav_6": "Terms & Conditions",
+        "cta_title": "Start using Supply Wok today",
+        "cta_desc": "Dive into our documentation or start deploying today with our starter kits made for restaurants and suppliers.",
+        "cta_btn_use": "Use now",
+        "cta_btn_features": "Features",
+        "nav_restaurants": "RESTAURANTS",
+        "nav_suppliers": "SUPPLIERS",
+        "rest_meta_title": "Restaurants Benefits | SupplyWok",
+        "rest_meta_desc": "Discover how SupplyWok optimizes kitchen operations, manages inventory, and coordinates suppliers.",
+        "rest_hero_title": "EMPOWER YOUR KITCHEN AND DECREASE COSTS",
+        "rest_hero_desc": "Streamline your restaurant's inventory control, simplify order placement, and seamlessly connect with your suppliers. Focus on crafting great food while SupplyWok handles the logistics.",
+        "supp_meta_title": "Suppliers Benefits | SupplyWok",
+        "supp_meta_desc": "Optimize deliveries, connect with restaurant clients, and predict demand with SupplyWok.",
+        "supp_hero_title": "OPTIMIZE YOUR DELIVERY AND SCALE YOUR CLIENTS",
+        "supp_hero_desc": "Increase delivery route efficiency, receive instant orders from your buyers, and predict supply demands in advance. Empower your business to serve more clients with precision.",
+        "benefits_title_rest": "Benefits designed for Restaurants",
+        "benefits_title_supp": "Benefits designed for Suppliers"
     },
     "es": {
-        "nav_features": "CARACTERÍSTICAS",
+        "nav_features": "INICIO",
         "nav_login": "INGRESAR",
         "nav_cta": "VER SUPPLYWOK EN ACCIÓN",
         "hero_title_1": "FINALMENTE, UNA FORMA DE DIRIGIR Y ESCALAR LAS ",
         "hero_title_highlight": "OPERACIONES DE TU COCINA",
         "hero_desc": "La plataforma todo en uno para restaurantes y proveedores. Monitorea el inventario, gestiona pedidos, rastrea condiciones en tiempo real y optimiza tus operaciones con herramientas inteligentes basadas en datos.",
-        "hero_btn_try": "Pruébalo",
+        "hero_btn_try": "Úsalo ahora",
         "hero_btn_see": "Ver cómo funciona",
         "hero_badge_title": "Operaciones Optimizadas",
         "hero_badge_desc": "Mira tu eficiencia mejorar con información en tiempo real y flujos automatizados.",
@@ -126,7 +172,7 @@ const translations = {
         "feat_4_title": "Pronóstico de Demanda",
         "feat_4_desc": "Entiende tus patrones de consumo y predice necesidades futuras. Planifica compras inteligentemente y reduce el desperdicio con datos.",
         "feat_4_link": "EXPLORAR PLANES →",
-        "feat_cta": "Pruébalo ahora",
+        "feat_cta": "Úsalo ahora",
         "uses_title": "USOS QUE TÚ QUIERES",
         "uses_tab_1": "Gestiona tus Pedidos",
         "uses_tab_2": "Conecta con Proveedores",
@@ -163,7 +209,7 @@ const translations = {
         "uses_5_li_2": "Pedidos rápidos",
         "uses_5_li_3": "Predice pedidos",
         "uses_5_li_4": "Aumento de ganancias",
-        "uses_btn": "PRUÉBALO AHORA",
+        "uses_btn": "ÚSALO AHORA",
         "impact_title": "EL IMPACTO<br>DE<br>SUPPLYWOK",
         "impact_1_desc": "Gestión de proveedores más rápida",
         "impact_2_desc": "Aumento en la eficiencia de pedidos y entregas en el primer año",
@@ -205,16 +251,62 @@ const translations = {
         "footer_nav_3": "LOGÍSTICA",
         "footer_nav_4": "INVENTARIO",
         "footer_nav_5": "ANALÍTICAS",
-        "footer_copy": "© 2024 SUPPLY WOK. TODOS LOS DERECHOS RESERVADOS."
+        "footer_copy": "© 2024 SUPPLY WOK. TODOS LOS DERECHOS RESERVADOS.",
+        "team_badge": "• EQUIPO",
+        "terms_title": "Términos y Condiciones",
+        "terms_updated": "<strong>Última actualización:</strong> 15 de mayo de 2026",
+        "terms_intro": "Bienvenido a SupplyWok. Al acceder y usar este sitio web o cualquiera de nuestros servicios, aceptas los presentes Términos y Condiciones. Si no estás de acuerdo con alguna parte de ellos, no debes usar la plataforma.",
+        "terms_h1": "1. Uso del servicio",
+        "terms_p1_a": "SupplyWok ofrece una plataforma para gestión de abastecimiento, inventario, pedidos, monitoreo y operaciones para restaurantes y proveedores.",
+        "terms_p1_b": "Te comprometes a usar el servicio únicamente para fines lícitos y de acuerdo con estas condiciones.",
+        "terms_h2": "2. Registro de cuenta",
+        "terms_p2": "Para acceder a ciertas funciones, podrías necesitar crear una cuenta. Eres responsable de mantener la confidencialidad de tus credenciales y de toda actividad realizada desde tu cuenta.",
+        "terms_h3": "3. Responsabilidades del usuario",
+        "terms_li3_1": "Proporcionar información veraz y actualizada.",
+        "terms_li3_2": "No intentar vulnerar la seguridad de la plataforma.",
+        "terms_li3_3": "No usar el servicio para fines fraudulentos o ilegales.",
+        "terms_li3_4": "Respetar los derechos de terceros y la normativa aplicable.",
+        "terms_h4": "4. Propiedad intelectual",
+        "terms_p4": "Todo el contenido, diseño, logotipos, textos, imágenes, marcas y elementos del sitio pertenecen a SupplyWok o a sus respectivos titulares. No está permitido copiar, reproducir o distribuir estos elementos sin autorización previa por escrito.",
+        "terms_h5": "5. Disponibilidad del servicio",
+        "terms_p5": "Hacemos esfuerzos razonables para mantener el servicio disponible, pero no garantizamos que esté libre de interrupciones, errores o fallas técnicas.",
+        "terms_h6": "6. Limitación de responsabilidad",
+        "terms_p6": "SupplyWok no será responsable por daños indirectos, incidentales o consecuentes derivados del uso o imposibilidad de uso de la plataforma, salvo que la ley aplicable disponga lo contrario.",
+        "terms_h7": "7. Modificaciones",
+        "terms_p7": "Podemos actualizar estos Términos y Condiciones en cualquier momento. Las modificaciones entrarán en vigor desde su publicación en esta página.",
+        "terms_h8": "8. Contacto",
+        "terms_p8": "Si tienes preguntas sobre estos Términos y Condiciones, puedes comunicarte con el equipo de SupplyWok a través de los canales oficiales del proyecto.",
+        "terms_back": "← Volver al inicio",
+        "pricing_1_badge": "Wok Premium",
+        "pricing_currency": "S/",
+        "pricing_period_mo": "/mes",
+        "pricing_2_badge_name": "Wok Enterprise",
+        "footer_nav_6": "Términos y condiciones",
+        "cta_title": "Comienza a usar Supply Wok hoy",
+        "cta_desc": "Sumérgete en nuestra documentación o comienza a implementar hoy mismo con nuestros kits de inicio hechos para restaurantes y proveedores.",
+        "cta_btn_use": "Úsalo ahora",
+        "cta_btn_features": "Características",
+        "nav_restaurants": "RESTAURANTES",
+        "nav_suppliers": "PROVEEDORES",
+        "rest_meta_title": "Beneficios para Restaurantes | SupplyWok",
+        "rest_meta_desc": "Descubre cómo SupplyWok optimiza las operaciones de cocina, gestiona el inventario y coordina proveedores.",
+        "rest_hero_title": "EMPODERA TU COCINA Y REDUCE COSTOS",
+        "rest_hero_desc": "Agiliza el control de inventario de tu restaurante, simplifica la creación de pedidos y conéctate sin problemas con tus proveedores. Concéntrate en cocinar mientras SupplyWok maneja la logística.",
+        "supp_meta_title": "Beneficios para Proveedores | SupplyWok",
+        "supp_meta_desc": "Optimiza entregas, conéctate con clientes de restaurantes y predice la demanda con SupplyWok.",
+        "supp_hero_title": "OPTIMIZA TU DISTRIBUCIÓN Y ESCALA TUS CLIENTES",
+        "supp_hero_desc": "Incrementa la eficiencia de tus rutas de reparto, recibe pedidos al instante de tus compradores y anticipa la demanda de suministros. Potencia tu negocio para servir a más clientes con precisión.",
+        "benefits_title_rest": "Beneficios diseñados para Restaurantes",
+        "benefits_title_supp": "Beneficios diseñados para Proveedores"
     },
     "zh": {
-        "nav_features": "功能",
+        "nav_features": "首页",
         "nav_login": "登录",
         "nav_cta": "查看 SUPPLYWOK",
         "hero_title_1": "终于，一种管理和扩展 ",
         "hero_title_highlight": "厨房运营的方式",
         "hero_desc": "餐厅和供应商的一体化平台。监控库存，管理订单，实时跟踪，并使用数据驱动的智能工具优化您的运营。",
-        "hero_btn_try": "试用一下",
+        "hero_btn_try": "立即使用",
         "hero_btn_see": "了解运作方式",
         "hero_badge_title": "运营优化",
         "hero_badge_desc": "通过实时洞察和自动化工作流提高效率。",
@@ -230,7 +322,7 @@ const translations = {
         "feat_4_title": "需求预测",
         "feat_4_desc": "了解您的消费模式并预测未来需求。通过数据支持的见解更智能地计划采购。",
         "feat_4_link": "探索计划 →",
-        "feat_cta": "立即试用",
+        "feat_cta": "立即使用",
         "uses_title": "您想要的用途",
         "uses_tab_1": "管理您的订单",
         "uses_tab_2": "连接供应商",
@@ -267,7 +359,7 @@ const translations = {
         "uses_5_li_2": "快速订单",
         "uses_5_li_3": "预测订单",
         "uses_5_li_4": "增加利润",
-        "uses_btn": "立即试用",
+        "uses_btn": "立即使用",
         "impact_title": "SUPPLYWOK<br>影响",
         "impact_1_desc": "更快的供应商管理",
         "impact_2_desc": "第一年订单和交付效率的提高",
@@ -309,28 +401,88 @@ const translations = {
         "footer_nav_3": "物流",
         "footer_nav_4": "库存",
         "footer_nav_5": "分析",
-        "footer_copy": "© 2024 SUPPLY WOK。保留所有权利。"
+        "footer_copy": "© 2024 SUPPLY WOK。保留所有权利。",
+        "team_badge": "• 团队",
+        "terms_title": "服务条款",
+        "terms_updated": "<strong>最近更新：</strong>2026年5月15日",
+        "terms_intro": "欢迎来到 SupplyWok。通过访问和使用本网站或我们的任何服务，即表示您接受这些服务条款。如果您不同意其中的任何部分，则不得使用该平台。",
+        "terms_h1": "1. 服务使用",
+        "terms_p1_a": "SupplyWok 为餐厅和供应商提供了一个用于供应管理、库存、订单、监控和运营的平台。",
+        "terms_p1_b": "您同意仅出于合法目的并按照这些条款使用本服务。",
+        "terms_h2": "2. 账户注册",
+        "terms_p2": "要访问某些功能，您可能需要创建一个帐户。您有责任维护您的凭据的机密性，并对在您的帐户下进行的所有活动负责。",
+        "terms_h3": "3. 用户责任",
+        "terms_li3_1": "提供真实且最新的信息。",
+        "terms_li3_2": "不要试图破坏平台的安全性。",
+        "terms_li3_3": "不要将服务用于欺诈或非法目的。",
+        "terms_li3_4": "尊重第三方的权利和适用法规。",
+        "terms_h4": "4. 知识产权",
+        "terms_p4": "本网站的所有内容、设计、徽标、文本、图像、商标和元素均属于 SupplyWok 或其各自所有者。未经事先书面授权，不得复制、再造或分发这些元素。",
+        "terms_h5": "5. 服务可用性",
+        "terms_p5": "我们尽合理努力保持服务的可用性，但我们不保证服务不会中断、无错误或无技术故障。",
+        "terms_h6": "6. 责任限制",
+        "terms_p6": "对于因使用或无法使用平台而导致的间接、附带或后果性损害，SupplyWok 不承担任何责任，除非适用法律另有规定。",
+        "terms_h7": "7. 条款修改",
+        "terms_p7": "我们可能随时更新这些服务条款。修改自发布在此页面起生效。",
+        "terms_h8": "8. 联系方式",
+        "terms_p8": "如果您对这些服务条款有任何疑问，可以通过项目的官方渠道与 SupplyWok 团队联系。",
+        "terms_back": "← 返回首页",
+        "pricing_1_badge": "Wok Premium",
+        "pricing_currency": "S/",
+        "pricing_period_mo": "/月",
+        "pricing_2_badge_name": "Wok Enterprise",
+        "footer_nav_6": "服务条款",
+        "cta_title": "今天开始使用 Supply Wok",
+        "cta_desc": "深入阅读我们的文档，或者立即使用我们为餐厅和供应商制作的入门套件进行部署。",
+        "cta_btn_use": "立即使用",
+        "cta_btn_features": "功能特点",
+        "nav_restaurants": "餐厅",
+        "nav_suppliers": "供应商",
+        "rest_meta_title": "餐厅效益 | SupplyWok",
+        "rest_meta_desc": "了解 SupplyWok 如何优化厨房运营、管理库存和协调供应商。",
+        "rest_hero_title": "助力您的厨房并降低成本",
+        "rest_hero_desc": "简化餐厅的库存控制，简化订单下达，并与您的供应商无缝连接。专注于制作美味佳肴，而 SupplyWok 负责物流。",
+        "supp_meta_title": "供应商效益 | SupplyWok",
+        "supp_meta_desc": "使用 SupplyWok 优化交付、与餐厅客户建立联系并预测需求。",
+        "supp_hero_title": "优化您的配送并扩大您的客户群",
+        "supp_hero_desc": "提高配送路线效率，即时接收买家订单，并提前预测供应需求。助力您的业务精准服务更多客户。",
+        "benefits_title_rest": "为餐厅设计的专属效益",
+        "benefits_title_supp": "为供应商设计的专属效益"
     }
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-    const langBtns = document.querySelectorAll('.header__lang-btn');
+    const langBtns = document.querySelectorAll('.header-lang-btn');
 
     langBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
             // Remove active class from all
-            langBtns.forEach(b => b.classList.remove('header__lang-btn--active'));
+            langBtns.forEach(b => b.classList.remove('header-lang-btn--active'));
             // Add active class to clicked
             const clickedBtn = e.target;
-            clickedBtn.classList.add('header__lang-btn--active');
+            clickedBtn.classList.add('header-lang-btn--active');
 
             let lang = 'en';
             if (clickedBtn.textContent.trim() === 'ES') lang = 'es';
             if (clickedBtn.textContent.trim() === '中文') lang = 'zh';
 
+            localStorage.setItem('supplywok-lang', lang);
             updateLanguage(lang);
         });
     });
+
+    // Restore language preference on load
+    const savedLang = localStorage.getItem('supplywok-lang') || 'en';
+    langBtns.forEach(btn => {
+        const btnText = btn.textContent.trim();
+        if ((savedLang === 'en' && btnText === 'EN') ||
+            (savedLang === 'es' && btnText === 'ES') ||
+            (savedLang === 'zh' && btnText === '中文')) {
+            langBtns.forEach(b => b.classList.remove('header-lang-btn--active'));
+            btn.classList.add('header-lang-btn--active');
+        }
+    });
+    updateLanguage(savedLang);
 
     function updateLanguage(lang) {
         const elements = document.querySelectorAll('[data-i18n]');
@@ -343,6 +495,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 } else {
                     el.textContent = translations[lang][key];
                 }
+            }
+        });
+
+        const htmlElements = document.querySelectorAll('[data-i18n-html]');
+        htmlElements.forEach(el => {
+            const key = el.getAttribute('data-i18n-html');
+            if (translations[lang] && translations[lang][key]) {
+                el.innerHTML = translations[lang][key];
             }
         });
     }

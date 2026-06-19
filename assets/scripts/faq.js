@@ -3,26 +3,26 @@
    ============================================= */
 
 document.addEventListener('DOMContentLoaded', () => {
-  const faqItems = document.querySelectorAll('.faq__item');
+  const faqItems = document.querySelectorAll('.faq-item');
 
   faqItems.forEach(item => {
-    const question = item.querySelector('.faq__question');
+    const question = item.querySelector('.faq-question');
     
     question.addEventListener('click', () => {
-      const isActive = item.classList.contains('faq__item--active');
+      const isActive = item.classList.contains('faq-item--active');
 
       // Close all other items
       faqItems.forEach(i => {
-        i.classList.remove('faq__item--active');
-        i.querySelector('.faq__question').setAttribute('aria-expanded', 'false');
-        i.querySelector('.faq__icon').textContent = '+';
+        i.classList.remove('faq-item--active');
+        i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        i.querySelector('.faq-icon').textContent = '+';
       });
 
       // Open clicked item if it wasn't already active
       if (!isActive) {
-        item.classList.add('faq__item--active');
+        item.classList.add('faq-item--active');
         question.setAttribute('aria-expanded', 'true');
-        item.querySelector('.faq__icon').textContent = '×';
+        item.querySelector('.faq-icon').textContent = '×';
       }
     });
   });
