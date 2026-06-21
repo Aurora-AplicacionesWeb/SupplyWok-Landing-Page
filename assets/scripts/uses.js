@@ -20,3 +20,23 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+/* =============================================
+   USES SECTION — INLINE VIDEO PLAYBACK
+   ============================================= */
+function playUsesVideo(facadeEl) {
+    const videoId = facadeEl.getAttribute('data-video-id');
+    const container = facadeEl.parentElement; // .uses-visual
+
+    const iframe = document.createElement('iframe');
+    iframe.className = 'uses-video-iframe';
+    iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0`;
+    iframe.title = 'SupplyWok product demo video';
+    iframe.setAttribute('frameborder', '0');
+    iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share');
+    iframe.setAttribute('referrerpolicy', 'strict-origin-when-cross-origin');
+    iframe.setAttribute('allowfullscreen', '');
+
+    container.innerHTML = '';
+    container.appendChild(iframe);
+}
