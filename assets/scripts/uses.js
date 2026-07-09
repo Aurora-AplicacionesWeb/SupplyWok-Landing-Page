@@ -21,12 +21,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-/* =============================================
-   USES SECTION — INLINE VIDEO PLAYBACK
-   ============================================= */
 function playUsesVideo(facadeEl) {
     const videoId = facadeEl.getAttribute('data-video-id');
-    const container = facadeEl.parentElement; // .uses-visual
+    const container = facadeEl.parentElement;
 
     const iframe = document.createElement('iframe');
     iframe.className = 'uses-video-iframe';
