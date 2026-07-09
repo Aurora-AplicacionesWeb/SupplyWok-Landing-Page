@@ -952,59 +952,14 @@ a:focus-visible {
   margin: 0 auto;
 }
 
-.team-slider-outer {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  margin: 48px 0;
-  width: 100%;
-}
-
-.team-slider-btn {
-  background-color: var(--color-black);
-  color: var(--color-bg);
-  border: none;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.25rem;
-  font-weight: bold;
-  cursor: pointer;
-  box-shadow: var(--shadow-sm);
-  transition: background-color 0.3s ease, transform 0.2s ease, opacity 0.3s ease;
-  z-index: 10;
-  flex-shrink: 0;
-}
-
-.team-slider-btn:hover {
-  background-color: var(--color-primary);
-  transform: scale(1.08);
-}
-
-.team-slider-btn:active {
-  transform: scale(0.95);
-}
-
-.team-slider-track {
-  display: flex;
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  padding: 16px 8px;
   max-width: 900px;
+  margin: 48px auto;
   width: 100%;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE/Edge */
-  -webkit-overflow-scrolling: touch;
-}
-
-.team-slider-track::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+  justify-items: center;
 }
 
 .team-card {
@@ -1014,8 +969,8 @@ a:focus-visible {
   justify-content: space-between;
   overflow: hidden;
   height: 380px;
-  width: 280px;
-  flex-shrink: 0;
+  width: 100%;
+  max-width: 280px;
   background-color: #F5EFE6;
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
@@ -1124,29 +1079,26 @@ a:focus-visible {
     padding: 60px 16px;
   }
   
-  .team-slider-outer {
-    gap: 8px;
-    margin: 32px 0;
-  }
-  
-  .team-slider-btn {
-    width: 40px;
-    height: 40px;
-    font-size: 1.1rem;
-  }
-  
-  .team-slider-track {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
-    padding: 12px 4px;
+    margin: 32px auto;
   }
   
   .team-card {
     height: 340px;
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
   }
   
   .team-card-name {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .team-grid {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -1502,7 +1454,7 @@ a:focus-visible {
 .cta {
   padding: 100px 24px;
   background-color: var(--color-white);
-  background-image: url('../images/fondo-cta.png');
+  background-image: url('../images/fondo-cta2.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
